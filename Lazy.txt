@@ -16,3 +16,18 @@
 
 3) Check specific setting
 § git config user.email
+
+4) Add changes of a file 
+§ git add .
+
+5) Make a commit
+§ git commit -m "Message"
+
+6) View your commits (history)
+§ git log 
+
+7) View a specific author's commits
+§ git log --author="Name"
+
+8) Git workfolow
+Working area (Local Computer) -> Staging area (add) -> Repository (commit)
