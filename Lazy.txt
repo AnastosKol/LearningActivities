@@ -29,5 +29,8 @@
 7) View a specific author's commits
 § git log --author="Name"
 
-8) Git workfolow
-Working area (Local Computer) -> Staging area (add) -> Repository (commit)
+8) Get the status of my commits
+§ git status
+
+9) Git workfolow
+Working area (Local Computer (Red)) -> Staging area (add (Green)) -> Repository (commit)
