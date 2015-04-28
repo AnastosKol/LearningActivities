@@ -17,8 +17,11 @@
 3) Check specific setting
 § git config user.email
 
-4) Add changes of a file 
+4) Add changes of all files 
 § git add .
+
+4a) Add changes of a single file
+§ git add <file.txt>
 
 5) Make a commit
 § git commit -m "Message"
