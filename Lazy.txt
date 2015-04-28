@@ -17,13 +17,13 @@
 3) Check specific setting
 § git config user.email
 
-4) Add changes of all files 
+4) Add changes of all modified files 
 § git add .
 
-4a) Add changes of a single file
+4a) Add changes of a single modified file
 § git add <file.txt>
 
-5) Make a commit
+5) Make a commit (all files)
 § git commit -m "Message"
 
 6) View your commits (history)
@@ -37,3 +37,6 @@
 
 9) Git workfolow
 Working area (Local Computer (Red)) -> Staging area (add (Green)) -> Repository (commit)
+
+10) Find the differencies in modified files
+§ git diff
