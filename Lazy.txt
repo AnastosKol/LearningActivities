@@ -1,0 +1,18 @@
+***************************************************
+					Lazy Anastos
+***************************************************
+
+
+
+###################################################
+						Git
+###################################################
+1) Set your name and email
+§ git config --global user.name "Anastos"
+§ git config --global user.email "anastoskol@gmail.com"
+
+2) Check correct settings
+§ git config --list
+
+3) Check specific setting
+§ git config user.email
