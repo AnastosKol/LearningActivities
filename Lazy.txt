@@ -38,7 +38,10 @@
 9) Git workfolow
 Working area (Local Computer (Red)) -> Staging area (add (Green)) -> Repository (commit)
 
-10) Find the differencies in modified files
+10) Compare differencies of the staging area against my copy
 § git diff
 
-11) Testing
+11) Compare differencies of my repository against the staged area
+§ git diff --staged
+
+11) Testing again
