@@ -40,3 +40,5 @@ Working area (Local Computer (Red)) -> Staging area (add (Green)) -> Repository 
 
 10) Find the differencies in modified files
 § git diff
+
+11) Testing
