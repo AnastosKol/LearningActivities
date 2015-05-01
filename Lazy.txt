@@ -36,12 +36,16 @@
 § git status
 
 9) Git workfolow
-Working area (Local Computer (Red)) -> Staging area (add (Green)) -> Repository (commit)
+Working directory (Local Computer (Red)) -> Staging area (add (Green)) -> Repository (commit)
 
-10) Compare differencies of the staging area against my copy
+10) Compare differencies of the working copy against my repository
 § git diff
 
-11) Compare differencies of my repository against the staged area
+11) Compare differencies of the staging area against the repository
 § git diff --staged
 
-11) Testing again
+12) Remove a file both from git and the folder
+§ git rm file.txt
+
+13) Rename a file
+§ git mv OldName.txt NewName.txt
