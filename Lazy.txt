@@ -74,11 +74,14 @@ e.g., git checkout 035sd24 (first few numbers) -- index.html
 20) Check my branches
 § git branch
 
-21) Merging two branches together. Go to the branch you want to merge stuff, use
+21) Merging two branches together. a) Go to the branch you want to merge stuff
 § git merge <Name of the other branch>
 
+22) Delete a branch localy
+§ git branch -d <Name of the branch>
 
-********************************************************************
+
+*****************************************************************
 GitHub:
 
 1) Add a remote 
@@ -97,3 +100,6 @@ or
 
 5) Download changes from the remote
 § git pull
+
+6) Delete a branch remotely
+§ git push origin  --delete <Name of branch>
