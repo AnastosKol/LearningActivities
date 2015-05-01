@@ -29,6 +29,8 @@
 6) View your commits (history)
 § git log 
 
+6a) § git log --pretty=oneline (One line logs!!)
+
 7) View a specific author's commits
 § git log --author="Name"
 
@@ -62,3 +64,36 @@ Working directory (Local Computer (Red)) -> Staging area (add (Green)) -> Reposi
 17) Get an old version from the Repo
 § git checkout  <commit number> -- file
 e.g., git checkout 035sd24 (first few numbers) -- index.html
+
+18) Make a new branch 
+§ git branch <Name>
+
+19) Switch to another branch
+§ git checkout <Name of the already existing branch>
+
+20) Check my branches
+§ git branch
+
+21) Merging two branches together. Go to the branch you want to merge stuff, use
+§ git merge <Name of the other branch>
+
+
+********************************************************************
+GitHub:
+
+1) Add a remote 
+§ git remote add <NameIt> <URL>
+
+2) Clone a remote 
+§ git clone <URL> <optional folder>
+or 
+§ git clone <ssh> <optional folder>
+
+3) Push my files to the remote
+§ git push -u <NameIt>
+
+4) Push files 
+§ git push <NameIt> <Branch>
+
+5) Download changes from the remote
+§ git pull
