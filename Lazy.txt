@@ -49,3 +49,12 @@ Working directory (Local Computer (Red)) -> Staging area (add (Green)) -> Reposi
 
 13) Rename a file
 § git mv OldName.txt NewName.txt
+
+14) Commit with skipping the staged area
+§ git commit -am
+
+15) Undo changes, Take a file from my repo and make it working copy (Working Copy <- Repo)
+§ git checkout -- file.txt
+
+16) Remove a file from the staging area
+§ git reset HEAD file.txt
