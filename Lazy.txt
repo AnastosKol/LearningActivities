@@ -56,5 +56,9 @@ Working directory (Local Computer (Red)) -> Staging area (add (Green)) -> Reposi
 15) Undo changes, Take a file from my repo and make it working copy (Working Copy <- Repo)
 § git checkout -- file.txt
 
-16) Remove a file from the staging area
+16) Remove a file from the staging area (Unstage)
 § git reset HEAD file.txt
+
+17) Get an old version from the Repo
+§ git checkout  <commit number> -- file
+e.g., git checkout 035sd24 (first few numbers) -- index.html
