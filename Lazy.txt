@@ -34,6 +34,10 @@
 7) View a specific author's commits
 § git log --author="Name"
 
+7a) Fancy logs
+§ git log --all --pretty=format:'%h %cd %s (%an)' --since='7 days ago'
+git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+
 8) Get the status of my commits
 § git status
 
@@ -55,7 +59,7 @@ Working directory (Local Computer (Red)) -> Staging area (add (Green)) -> Reposi
 14) Commit with skipping the staged area
 § git commit -am
 
-15) Undo changes, Take a file from my repo and make it working copy (Working Copy <- Repo)
+15) UNDO changes, Take a file from my repo and make it working copy (Working Copy <- Repo)
 § git checkout -- file.txt
 
 16) Remove a file from the staging area (Unstage)
@@ -80,7 +84,34 @@ e.g., git checkout 035sd24 (first few numbers) -- index.html
 22) Delete a branch localy
 § git branch -d <Name of the branch>
 
+23) Adding aliases: Add the following in .gitconfig:
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
 
+  24) Tag a commit
+  § git tag <name>
+
+  25) View tagged commits 
+  § git tag
+
+  26) Delete a tag
+  § git tag -d <tagname>
+
+27) UNDO local changes (working directory)
+§ git checkout <file>
+
+28) UNDO staged changes (before committing)
+§ git reset HEAD <file>
+
+29) UNDO commited changes
+§ git rever HEAD
+  
 *****************************************************************
 GitHub:
 
@@ -98,8 +129,14 @@ or
 4) Push files 
 § git push <NameIt> <Branch>
 
-5) Download changes from the remote
+5) Update all local branches with the remote branches
 § git pull
 
 6) Delete a branch remotely
 § git push origin  --delete <Name of branch>
+
+7) Update the local branches without updating the current branch (HEAD), does not merge
+§ git fetch
+
+8) Integrate your commits in the master branch
+§ git merge
