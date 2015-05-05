@@ -1,0 +1,129 @@
+//
+//  main.cpp
+//  HelloWorld
+//
+//  Created by Anastos Kol on 13/02/15.
+//  Copyright (c) 2015 Anastos Kol. All rights reserved.
+//
+
+#include <iostream>
+#include <string>
+#include "OtherClass.h"
+
+using namespace std;
+
+
+//Declaring the functions
+void printSmth(int x);
+int addNumbers(int x, int y);
+
+//Creating a class in order to group similar functions!
+class Inputs{
+    public:                                                  //Public functions
+        void endNote(){                                     //Function endNote inside class Inputs
+            cout << "The programm is over" << endl;
+        }
+        void endNote2(){
+            cout << "Goodbye" << endl;
+        }
+};
+
+//A second class with private variables!
+class Variables{
+    public:
+    Variables(){                                           //This is a constructor, same name as class. You can give an input to the constructor
+        cout << "Hej" << endl;                             //ONE CONSTRUCTOR PER CLASS!!!
+    }
+                                                            // 2)Make a public function (Seter) for accessing the private function
+        void setdate(string ymd){
+            date = ymd;
+    }
+        string getdate(){                                   // 3)Make a 2nd public function for getting the function
+            return date;
+    }
+    private:
+        string date;                                        // 1)Write your private function
+};
+
+class Names{
+    public:
+        Names(string z){
+            setname(z);
+        }
+        void setname(string ns){
+            name=ns;
+        }
+        string getname(){
+            return name;
+        }
+    private:
+        string name;
+};
+
+int main() {
+    int x;
+    int y;
+    
+    cout << "Hello, World!\n" << endl;
+    cout << "Give an input number other than zero \n";
+    cin >> x;
+    
+    if (x!=0){
+        cout << "The number you gave is " << x << " and it is not zero!!!" << endl;
+    }
+    else {                                              //The if-else requires brackets
+        cout << "Zero numbers are not allowed \n";
+    }
+    
+    printSmth(x);
+    
+    cout << "Give a second number other than 0 in order to proceed with addition\n";
+    cin >> y;
+    
+    if (y!=0){
+        cout << "The number you gave is " << y << " !!! \n" << endl;
+    }
+    else {
+        cout << "Zero numbers are not allowed \n \n";
+    }
+    
+    cout << "The sum of the two numbers is " << addNumbers(x, y) << "\n" << endl;
+    
+    Inputs object1;                                 //Class and its object
+    object1.endNote();                              //From the object, call the function endNote
+    object1.endNote2();
+    
+    Variables object2;                              //Class and its object
+    object2.setdate("2015-02-17");                  //Use the set function with the input wanted
+    cout << object2.getdate() << endl;              //Print the get function!
+    
+    Variables obj;                                  //The constructor is called by creating an object
+    
+    Names bo("Anastos \n");
+    cout << bo.getname();
+    
+    OtherClass bo2;                                 //Give different object names. OtherClass is .h and .cpp fikes
+    
+    return 0;
+}
+
+
+//funticon n.1
+void printSmth(int x) {
+
+    if (x!=0){
+        cout << "Number " << x << " is a good choice! \n" << endl;
+    }
+    else {
+        cout << "Number " << x << " is a bad choice \n" << endl;
+    }
+}
+
+//function n.2
+int addNumbers(int x, int y) {
+    int sum;
+    sum = x + y;
+    return sum;
+
+}
+
