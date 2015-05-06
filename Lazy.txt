@@ -111,6 +111,9 @@ e.g., git checkout 035sd24 (first few numbers) -- index.html
 
 29) UNDO commited changes
 § git rever HEAD
+
+30) Last commit
+§ git log --max-count=1
   
 *****************************************************************
 GitHub:
